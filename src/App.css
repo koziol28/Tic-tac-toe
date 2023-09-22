@@ -1,0 +1,23 @@
+.board-container {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    100px
+  ); /* Adjust the size of each column as needed */
+  /* Adjust the gap between squares as needed */
+  width: 400px; /* Adjust the total width as needed (3 columns * 100px + 2 * 10px gap) */
+  height: 400px; /* Set the same height as the width to make it a square */
+  margin: 0 auto; /* Center the board horizontally */
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #000;
+  cursor: pointer;
+}
